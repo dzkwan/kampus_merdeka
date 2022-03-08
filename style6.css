@@ -1,0 +1,71 @@
+* {
+	font-family: verdana, cambria;
+}
+body{
+	background: #eaf0f7;
+}
+#container{
+	width: 25%;
+	padding: 20px 0 10px 0;
+	border-radius: 10px;
+	margin: 200px auto;
+	background: white;
+	text-align: center;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.13);
+}
+h3{
+	margin: 0;
+}
+hr{
+	background: #3e3f40;
+}
+table{
+	padding: 0 20px;
+}
+input[type=text]{
+	border-radius: 5px;
+	outline: none;
+	width: 100%;
+	margin: 10px 0;
+	padding: 6px 10px;
+	border: 1px solid #dfdfdf;
+	background: #f5f6f7;
+	box-sizing: border-box;
+	transition: .2s;
+}
+#hasil input{
+	border: 1px solid #b5bbc1;
+	background: #e8e9eb;
+	margin: 10px auto;
+	display: block;
+	width: 40%;
+}
+#matika .input{
+	width: 8%;
+	background: #5463FF;
+	border: none;
+	padding: 6px 0;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.batal{
+	background: #FF4646;
+	display: block;
+	border: none;
+	padding: 6px 15px;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	margin: 10px auto auto auto;
+}
+input[type=text]:focus{
+	transition: .2s;
+	border: 1px solid #1877f2;
+}
+#matika .input:hover{
+	background: #414DCB;
+}
+.batal:hover{
+	background: #e02e2e;
+}
