@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tugas 6 Javascript</title>
+	<link rel="stylesheet" type="text/css" href="style6.css">
+</head>
+<body>
+	<div id="container">
+		<h3>Kalkulator</h3>
+		<hr/>
+		<form id="formulir">
+			<table>
+				<tr>
+					<td>
+						<input type="text" name="a1" value="Angka 1" onfocus="focusa1()" />
+					</td>
+					<td>
+						<input type="text" name="a2" value="Angka 2" onfocus="focusa2()" />
+					</td>
+				</tr>
+				<tr>
+					<td id="hasil" colspan="2">
+						<label>HASIL</label>
+						<input type="text" name="hasil" value="" disabled />
+					</td>
+				</tr>
+				<tr>
+					<td id="matika" colspan="2">
+						<input class="input" onclick="hitung(this.name)" type="button" name="tambah" value="+"  />
+						<input class="input" onclick="hitung(this.name)" type="button" name="kurang" value="-" />
+						<input class="input" onclick="hitung(this.name)" type="button" name="kali" value="x" />
+						<input class="input" onclick="hitung(this.name)" type="button" name="bagi" value="/" />
+						<input class="input" onclick="hitung(this.name)" type="button" name="pangkat" value="^" />
+						<input class="batal" type="button" name="batal" value="Batal" onclick="kosong()">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="script6.js"></script>
+</html>
