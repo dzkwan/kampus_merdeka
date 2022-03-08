@@ -1,0 +1,32 @@
+* {
+	font-family: verdana;
+}
+body{
+	background: #eaf0f7;
+}
+div{
+	background: white;
+	width: 40%;
+	padding: 20px;
+	margin: 100px auto;
+	border-radius: 10px;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.13);
+}
+table{
+	border: 2px solid black;
+	width: 100%;
+	border-radius: 5px;
+}
+th{
+	border-bottom: 2px solid black;
+	background: #5564ff;
+	color: white;
+	padding: 10px;
+}
+td{
+	background: #D7E9F7;
+	padding: 10px;
+}
+.line{
+	border-right: 2px solid black;
+}
