@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tugas Jquery</title>
+    <style>
+      *{
+        font-family: verdana;
+      }
+      body{
+        background: #eaf0f7;
+      }
+      hr{
+        background: black;
+      }
+      #container-gambar{
+        text-align: center;
+        background: white;
+        width: 50%;
+        margin: 40px auto;
+        padding: 1px 0 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+      #kuda, #sapi, #kambing, #kucing {
+        background: #f65151;
+        padding: 50px;
+        margin: 0 15px;
+        display: inline-block;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      label{
+        cursor: pointer;
+        color: white;
+      }
+      #container-profile{
+        background: white;
+        width: 50%;
+        margin: 50px auto;
+        padding: 1px 0 1px 0;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+      h3{
+        text-align: center;
+      }
+      #container-button{
+        text-align: center;
+        padding: 10px 0;
+      }
+      button{
+        background: #5564ff;
+        color: #f4f4f4;
+        border: none;
+        margin: 0 10px;
+        padding: 8px;
+        border-radius: 5px;
+        transition: .15s;
+      }
+      .text1, .text2, .text3{
+        display: none;
+        padding: 0 20px;
+      }
+      button:hover{
+        background: #3e4bd3;
+        color: white;
+        transition: .15s;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container-gambar">
+      <h3>Click It And Wait</h3>
+      <hr/>
+      <div>
+        <div id="kuda">
+          <label class="kuda">Kuda</label>
+          <audio></audio>
+        </div>
+        <div id="sapi">
+          <label class="sapi">Sapi</label>
+          <audio></audio>
+        </div>
+        <div id="kambing">
+          <label class="kambing">Kambing</label>
+          <audio></audio>
+        </div>
+        <div id="kucing">
+          <label class="kucing">Kucing</label>
+          <audio></audio>
+        </div>
+      </div>
+    </div>
+    <div id="container-profile">
+      <h3>Click It And See</h3>
+      <hr/>
+      <div id="container-button">
+        <button class="button1">Company Profile</button>
+        <button class="button2">Visi & Misi</button>
+        <button class="button3">Deskripsi Bisnis</button>
+      </div>
+      <div class="text1">
+        <p>
+          <center><b>Company Profile</b></center>
+          NF COMPUTER adalah bagian dari grup Nurul Fikri yang telah dipercaya oleh masyarakat Indonesia di bidang pendidikan dan peningkatan sumber daya manusia selama lebih dari 24 tahun. Alumni-alumninya telah berkiprah dan diakui kualitas kerja dan integritasnya oleh dunia usaha.<br><br>
+          NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di bidang pendidikan dan pelatihan IT (Information Technology). Kami berkomitmen menjadi partner perusahaan Anda dalam mengembangkan kemampuan serta keahlian SDM di bidang IT. Dengan komitmen tersebut, kami mempersiapkan tim pengajar yang professional dan berpengalaman di bidang IT.<br><br>
+          Di Era Industri 4.0 saat ini, teknologi informasi berkembang sangat cepat, oleh karena itu pengembangan sumber daya manusia di bidang IT menjadi sebuah kebutuhan yang perlu diprioritaskan. NF COMPUTER menjadi jawaban yang tepat atas kebutuhan pengembangan kompetensi IT. Sehingga kami selalu berusaha untuk terus berinovasi terhadap teknologi terbaru.
+        </p>
+      </div>
+      <div class="text2">
+        <p>
+          <center><b>Visi & Misi</b></center><br>
+          Visi<br>
+          Menjadi institusi pelatihan yang kompeten dan profesional di bidang pendidikan teknologi informasi dan komunikasi di berbagai wilayah indonesia.<br>
+          Misi<br>
+          Membangun, memelihara dan mengembangkan institusi pelatihan bisnis berdaya saing tinggi, berkarakter profesional, kompeten, mengedepankan integritas dan tanggung jawab sosial, dengan mengembangkan dan menyediakan produk produk pendidikan dan pelatihan teknologi informasi dan komunikasi prima.
+        </p>
+      </div>
+      <div class="text3">
+        <p>
+          <center><b>Deskripsi Bisnis</b></center><br>
+          NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang Teknologi Informasi dan Komunikasi (IT Training) yang dibagi menjadi lima produk.
+          Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu :
+          <ul>
+            <li>
+              Public Class, merupakan short course bidang TIK (Teknologi Informasi dan Komunikasi) yang berbasis Linux maupun Windows.
+            </li>
+            <li>
+              Exclusive Class, merupakan paket training yang diberikan kepada customer dengan durasi 6-8 jam perhari dengan jumlah peserta minimal 2 orang dan pelaksanaan pelatihannya di NF Computer.
+            </li>
+            <li>
+              In House/In Company Training, yaitu pelatihan TIK yang dikustomisasi untuk kebutuhan perusahaan-perusahaan
+            </li>
+          </ul>
+          Paket bisnis khusus dibagi ke dalam beberapa kategori produk yang dikelola secara profesional oleh NF COMPUTER yaitu :
+          <ul>
+            <li>
+              Kerjasama Pendidikan Sekolah, yaitu Divisi khusus pendidikan sekolah dimana NF COMPUTER bekerjasama dalam hal : Kerjasama pembangunan Lab Komputer, Pengajaran Komputer dan kombinasi antara keduanya.
+            </li>
+            <li>
+              Usulan Produk lain: Produk-produk yang menurut lokasi diminati oleh pasar tapi belum ada dalam daftar produk pelatihan dan pendidikan NF COMPUTER, dapat diajukan oleh cabang untuk menjadi produk yang dipertimbangkan sebagai produk dan akan menjadi bagian dari penyelenggaraan pelatiahan dan pendidikan di cabang tersebut pada periode yang dianggap tepat oleh NF COMPUTER.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    $("document").ready(function () {
+      $("#kuda").click(function () {
+        $(this).css({ 
+          "background": "url(https://images.unsplash.com/photo-1566251037378-5e04e3bec343?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG9yc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60)",
+          "background-size": "200px",
+          "transition": "0.2s"
+        });
+        $(".kuda").css({
+          "opacity": "0%"
+        });
+        $("audio").attr({
+          "src": "horse.mp3",
+          "autoplay": "autoplay"
+        });
+      });
+      $("#sapi").click(function () {
+        $(this).css({ 
+          "background": "url(https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y293fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)",
+          "background-size": "200px",
+          "transition": "0.2s"
+        });
+        $(".sapi").css({
+          "opacity": "0%"
+        });
+        $("audio").attr({
+          "src": "cow.mp3",
+          "autoplay": "autoplay"
+        });
+      });
+      $("#kambing").click(function () {
+        $(this).css({ 
+          "background": "url(https://images.unsplash.com/photo-1613846043689-afad9cb6317d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGdvYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60)",
+          "background-size": "200px",
+          "transition": "0.2s"
+        });
+        $(".kambing").css({
+          "opacity": "0%"
+        });
+        $("audio").attr({
+          "src": "goat.mp3",
+          "autoplay": "autoplay"
+        });
+      });
+      $("#kucing").click(function () {
+        $(this).css({ 
+          "background": "url(https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60)",
+          "background-size": "160px",
+          "transition": "0.2s"
+        });
+        $(".kucing").css({
+          "opacity": "0%"
+        });
+        $("audio").attr({
+          "src": "cat.mp3",
+          "autoplay": "autoplay"
+        });
+      });
+      $("#kuda").mouseout(function () {
+        $(this).css({ 
+          "background": "#f65151"
+        });
+        $(".kuda").css({
+          "opacity": "100%"
+        });
+      });
+      $("#sapi").mouseout(function () {
+        $(this).css({ 
+          "background": "#f65151"
+        });
+        $(".sapi").css({
+          "opacity": "100%"
+        });
+      });
+      $("#kambing").mouseout(function () {
+        $(this).css({ 
+          "background": "#f65151"
+        });
+        $(".kambing").css({
+          "opacity": "100%"
+        });
+      });
+      $("#kucing").mouseout(function () {
+        $(this).css({ 
+          "background": "#f65151"
+        });
+        $(".kucing").css({
+          "opacity": "100%"
+        });
+      });
+    });
+
+    $("document").ready(function () {
+      $(".button1").click(function () {
+        $(".text1").slideToggle();
+      });
+      $(".button2").click(function () {
+        $(".text2").slideToggle();
+      });
+      $(".button3").click(function () {
+        $(".text3").slideToggle();
+      });
+    });
+  </script>
+</html>
