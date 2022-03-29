@@ -215,7 +215,7 @@ select:focus {
                     <a href="#section4">Contact Me</a>
                 </div>
                 <div id="button4">
-                    <a href="index.php" onclick="confirm('yakin ingin keluar?');">LOG OUT</a>
+                    <a href="#" onclick="history.go(-1)">LOG OUT</a>
                 </div>
             </div>
         </nav>
